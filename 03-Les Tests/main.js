@@ -1,9 +1,10 @@
-age = 12;
+// Exercice 1
 
-if (age > 18) {
-    console.log("Je suis majeur")
+var anneeDeConstruction = 2022;
+
+if (anneeDeConstruction < 2000) {
+    console.log("Voiture Polluante");
+} else {
+    console.log("Voiture Conforme");
 }
 
-if (age < 18) {
-    console.log("Je suis majeur")
-}
