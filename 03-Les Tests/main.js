@@ -62,3 +62,4 @@ if (strengh >= 6) {
 } else {
     console.log("mage");
 }
+
