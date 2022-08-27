@@ -94,31 +94,45 @@ var readline = require("readline-sync");
 //     console.log("Décembre est le %dème mois", saisie)
 // } 
 
-var mois = readline.question("Saisissez un mois de l'année : ");
-console.log("Vous avez entré : " + mois);
+// var mois = readline.question("Saisissez un mois de l'année : ");
+// console.log("Vous avez entré : " + mois);
 
-var txt = "le mois de " + mois + " correspond à "
-if (mois === "Janvier") {
-    console.log(txt + "1")
-} else if(mois === "Février") {
-    console.log(txt + "2")
-} else if(mois === "Mars") {
-    console.log(txt + "3")
-} else if(mois === "Avril") {
-    console.log(txt + "4")
-} else if(mois === "Mai") {
-    console.log(txt + "5")
-} else if(mois === "Juin") {
-    console.log(txt + "6")
-} else if(mois === "Juillet") {
-    console.log(txt + "7")
-} else if(mois === "Août") {
-    console.log(txt + "8")
-} else if(mois === "Septembre") {
-    console.log(txt + "9")
-} else if(mois === "Octobre") {
-    console.log(txt + "10")
-} else if(mois === "Novembre") {
-    console.log(txt + "11")
-    console.log(txt + "12")
+// var txt = "le mois de " + mois + " correspond à "
+// if (mois === "Janvier") {
+//     console.log(txt + "1")
+// } else if(mois === "Février") {
+//     console.log(txt + "2")
+// } else if(mois === "Mars") {
+//     console.log(txt + "3")
+// } else if(mois === "Avril") {
+//     console.log(txt + "4")
+// } else if(mois === "Mai") {
+//     console.log(txt + "5")
+// } else if(mois === "Juin") {
+//     console.log(txt + "6")
+// } else if(mois === "Juillet") {
+//     console.log(txt + "7")
+// } else if(mois === "Août") {
+//     console.log(txt + "8")
+// } else if(mois === "Septembre") {
+//     console.log(txt + "9")
+// } else if(mois === "Octobre") {
+//     console.log(txt + "10")
+// } else if(mois === "Novembre") {
+//     console.log(txt + "11")
+// } else {    
+//     console.log(txt + "12")
+// }
+
+var classe = readline.question("Saisissez la classe de l'élève entre A et E : ");
+console.log("Vous avez saisi la classe " + classe);
+
+if (classe === "A" || classe === "B" || classe === "a" || classe === "b") {
+   console.log('Numéro 1'); 
+} else if(classe === "C" || classe === "D" || classe === "c" || classe === "d") {
+    console.log("Numéro 2");
+} else if(classe === "E" || classe === "F" || classe === "e" || classe === "f") {
+    console.log("Numéro 3");
+} else {
+    console.log("Il n'y a pas d'autre classe.")
 }
