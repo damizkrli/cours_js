@@ -97,28 +97,28 @@ var readline = require("readline-sync");
 var mois = readline.question("Saisissez un mois de l'année : ");
 console.log("Vous avez entré : " + mois);
 
+var txt = "le mois de " + mois + " correspond à "
 if (mois === "Janvier") {
-    console.log("%s est le 1er mois de l'année", mois)
-} else if(mois === "Février") {mois === "Janvier"
-    console.log("%s est le 2ème mois de l'année", mois)
+    console.log(txt + "1")
+} else if(mois === "Février") {
+    console.log(txt + "2")
 } else if(mois === "Mars") {
-    console.log("%s est le 3ème mois de l'année", mois)
+    console.log(txt + "3")
 } else if(mois === "Avril") {
-    console.log("%s est le 4 mois de l'année", mois)
+    console.log(txt + "4")
 } else if(mois === "Mai") {
-    console.log("%s est le 5ème mois de l'année", mois)
+    console.log(txt + "5")
 } else if(mois === "Juin") {
-    console.log("%s est le 6ème mois de l'année", mois)
+    console.log(txt + "6")
 } else if(mois === "Juillet") {
-    console.log("%s est le 7ème mois de l'année", mois)
+    console.log(txt + "7")
 } else if(mois === "Août") {
-    console.log("%s est le 8ème mois de l'année", mois)
+    console.log(txt + "8")
 } else if(mois === "Septembre") {
-    console.log("%s est le 9ème mois de l'année", mois)
+    console.log(txt + "9")
 } else if(mois === "Octobre") {
-    console.log("%s est le 10ème mois de l'année", mois)
+    console.log(txt + "10")
 } else if(mois === "Novembre") {
-    console.log("%s est le 11ème mois de l'année", mois)
-} else {
-    console.log("%s est le 12ème mois de l'année", mois)
+    console.log(txt + "11")
+    console.log(txt + "12")
 }
