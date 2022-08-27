@@ -33,3 +33,16 @@ console.log(nom + ' ' + prenom);
 
 
 // console.log("Prénom : " + prenom + ' - Nom : ' + nom);
+
+
+var phrase = "Bonjour";
+phrase += " ";
+phrase += "Toto,\n";
+phrase += "Comment vas-tu ?";
+
+console.log(phrase);
+
+var age = 12;
+console.log("Votre age est de %d ans", age)
+var sexe = 'homme';
+console.log("Vous êtes un %s", sexe);
