@@ -139,12 +139,70 @@ var readline = require("readline-sync");
 
 // exo 8
 
-var age = 40;
-var taille = 170;
-var isFrench = false;
+// var age = 40;
+// var taille = 170;
+// var isFrench = false;
 
-if (age > 16 && taille > 160 && isFrench == true) {
-    console.log("apte")
-} else {
-    console.log("inapte")
+// if (age > 16 && taille > 160 && isFrench == true) {
+//     console.log("apte")
+// } else {
+//     console.log("inapte")
+// }
+
+// exo 9
+var age = 82;
+var sexe = false;
+var ville = "Paris"
+
+if (age > 80 && ville === "Toulouse" ) {
+    if (sexe) {
+        console.log("Personne âgée de Toulouse de sexe Masculin")
+    } else {
+    console.log("Personne âgée de Toulouse de sexe Féminin")
+    } 
+}  else {
+    if (age <= 80 && (ville === "Paris" || ville === "Marseille")) {
+        if (sexe) {
+    console.log("Personne adulte de Paris ou Marseille de sexe masculin")
+        }
+    } else {
+        console.log("Personne adulte de Paris ou Marseille de sexe féminin")
+    }
 }
+
+// exo 10 Les ternaires
+age = 19;
+sportif = false;
+sexe = false;
+
+// Vérfier l'age en ternaire
+console.log((age>=18) ? "Majeur" : "Mineur")
+
+// vérifier le sexe en ternaire
+console.log((sexe) ? "Homme" : "Femme")
+
+// Vérifier sportif en ternaire 
+console.log((sportif) ? "Sportif" : "Non-sportif")
+
+// modulo = ce qu'il reste de la division
+// console.log(5 % 2) // 1 => impair
+// console.log(4 % 2) // 2 => pair
+// premierChiffre = readline.questionInt("Saisissez le premier chiffre : ");
+// secondChiffre = readline.questionInt("Saisissez le second chiffre : ");
+// console.log("Le Modulo est " + premierChiffre % secondChiffre + ".")
+
+// // // vérifier le modulo
+// console.log(((premierChiffre % secondChiffre === 0) ? "pair" : "impair"))
+
+// // OU
+
+// var saisie = readline.questionInt("Choisir un nombre : ");
+// var parite = (saisie % 2 === 0) ? 'pair' : "impair";
+// console.log("Parite : " + parite);
+
+// Est divisible par 
+nbDivisibleParQuatre = readline.questionInt("Choisissez un chiffre à diviser par 4 : ");
+console.log("Vous avez choisit " + nbDivisibleParQuatre);
+
+isDivisible = (nbDivisibleParQuatre % 4 === 0) ? "Divisible" : "Non Divisible"
+console.log(isDivisible);
