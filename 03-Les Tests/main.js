@@ -124,15 +124,27 @@ var readline = require("readline-sync");
 //     console.log(txt + "12")
 // }
 
-var classe = readline.question("Saisissez la classe de l'élève entre A et E : ");
-console.log("Vous avez saisi la classe " + classe);
+// var classe = readline.question("Saisissez la classe de l'élève entre A et E : ");
+// console.log("Vous avez saisi la classe " + classe);
 
-if (classe === "A" || classe === "B" || classe === "a" || classe === "b") {
-   console.log('Numéro 1'); 
-} else if(classe === "C" || classe === "D" || classe === "c" || classe === "d") {
-    console.log("Numéro 2");
-} else if(classe === "E" || classe === "F" || classe === "e" || classe === "f") {
-    console.log("Numéro 3");
+// if (classe === "A" || classe === "B" || classe === "a" || classe === "b") {
+//    console.log('Numéro 1'); 
+// } else if(classe === "C" || classe === "D" || classe === "c" || classe === "d") {
+//     console.log("Numéro 2");
+// } else if(classe === "E" || classe === "F" || classe === "e" || classe === "f") {
+//     console.log("Numéro 3");
+// } else {
+//     console.log("Il n'y a pas d'autre classe.")
+// }
+
+// exo 8
+
+var age = 40;
+var taille = 170;
+var isFrench = false;
+
+if (age > 16 && taille > 160 && isFrench == true) {
+    console.log("apte")
 } else {
-    console.log("Il n'y a pas d'autre classe.")
+    console.log("inapte")
 }
